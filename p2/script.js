@@ -21,3 +21,13 @@ const showRegister = () => {
     `
     root.innerHTML = str
 }
+
+const showHome = () => {
+    let str=`
+    <div class='App-Container'>
+    <h1>Welcome to the Home Page</h1>
+    <button onclick='showLogin()'>Log Out</button>
+    </div>
+    `
+    root.innerHTML = str
+}
