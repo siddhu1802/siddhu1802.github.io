@@ -6,21 +6,24 @@
     <title>Document</title>
         <script>
         const submitInfo=() =>{
-            let name = document.getElementsByName('textbox1').value;
-            let email = document.getElementsByName('textbox2').value;
-            let password = document.getElementsByName('textbox3').value;
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let str = `here is the information-
+            <h2> ${name}-${email}-${password}'</h2>`;
+
             dvresult.innerHTML= str
         }
     </script>
 </head>
 <body>
     <h1>fill the form </h1>
-    <input type="text" id="textbox1"/>
-    <input type="text" id="textbox2"/>
-    <input type="text" id="textbox3"/>
+    <input type="text" id="name"/>
+    <input type="text" id="email"/>
+    <input type="text" id="password"/>
     <button onclick="submitInfo()" style="background-color:blueviolet">Submit</button>
     <hr />
-    <div id="result"></div>
+    <div id="dvresult"></div>
         
 </body>
 </html>
