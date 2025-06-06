@@ -24,7 +24,7 @@ const showRegister = () => {
 
 const showHome = () => {
     let str=`
-    <div class='App-Container'>
+    <div class='App-home'>
     <h1>Welcome to the Home Page</h1>
     <button onclick='showLogin()'>Log Out</button>
     </div>
