@@ -83,16 +83,14 @@ const amount = () => {
     user.balance += amount;
     showHome(); 
   } else {
-    dvmsg.innerHTML = "Access Denied";
+    dvmsg.innerHTML = "invalid amount";
   }
   if (value == 2 && amount >= 0) {
     if (user.balance >= amount) {
       user.balance -= amount;
       showHome();
     } else {
-      dvmsg.innerHTML = "Insufficient Balance";
+      dvmsg.innerHTML = "insufficient balance";
     }
-  } else {
-    dvmsg.innerHTML = "Access Denied";
   }
 }
